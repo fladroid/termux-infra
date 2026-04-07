@@ -1,0 +1,12 @@
+#!/data/data/com.termux/files/usr/bin/sh
+export AUTOSSH_GATETIME=0
+export AUTOSSH_LOGFILE=/dev/null
+exec autossh -M 0 -N \
+  -o StrictHostKeyChecking=no \
+  -o ServerAliveInterval=30 \
+  -o ServerAliveCountMax=3 \
+  -o ExitOnForwardFailure=yes \
+  -R 8001:localhost:8001 \
+  -R 8091:localhost:8080 \
+  -R 5433:localhost:5432 \
+  balsam@balsam.dynu.net
