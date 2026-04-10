@@ -1,5 +1,9 @@
 {
   "cvor": "sa55",
   "ts": "2026-04-10T09:10:03Z",
-  "status": "ziv"
+  "status": "mrtav",
+  "prijavio": "s7plus",
+  "mrtav_od": "2026-04-10T09:10:03Z",
+  "alarmi_danas": 1,
+  "alarmi_datum": "2026-04-10"
 }
